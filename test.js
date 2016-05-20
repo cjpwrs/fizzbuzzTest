@@ -1,1 +1,18 @@
 // write a program called fizzBuzz that console.logs numbers from 1 to 100, but for multiples of three print 'fizz,' for multiples of five print 'buzz,' and for multiples of both three and five print 'fizzbuzz.' Otherwise, do nothing.
+function fizzBuzz(){
+	for(var i = 1; i < 100; i++){
+		if(i % 3 === 0 && i % 5 === 0){
+			console.log('FizzBuzz');
+		}
+		else if(i % 3 === 0){
+			console.log('Fizz');
+		}
+		else if(i % 5 === 0){
+			console.log('Buzz');
+		}
+		else{
+			console.log(i);
+		}
+	}
+}
+
